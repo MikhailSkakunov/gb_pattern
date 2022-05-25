@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+ db:
+  container_name: db_patterns
+  image: mysql:8.0.28
+  environment:
+    MYSQL_ROOT_PASSWORD: "root"
+  ports:
+    - "3366:3306"
+  volumes:
+    - "/c/Users/skak8/IdeaProjects/gb_pattern/db-data:/var/lib/mysql"
